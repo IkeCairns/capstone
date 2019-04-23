@@ -55,30 +55,49 @@ p {
 }
 
 /* Header */
-#header {
+header .desktop{
   display: flex;
   height: 3.2rem;
   align-items: center;
   padding: 1.6rem 2.4rem;
 }
 
-#ic-logo {
+header .desktop .ic-logo {
   width: 3.2rem;
   height: 3.2rem;
 }
 
-#header h3 {
+header .desktop h3 {
   flex-grow: 1;
   font-weight: bold;
 }
 
-#header ul{
+header .desktop ul{
   display: flex;
 }
 
-#header ul li {
+header .desktop ul li {
   margin-right: 0.8rem;
   margin-left: 0.8rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: flex;
+    justify-content: space-between;
+    height: 6.4rem;
+  }
+  header .mobile .ic {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 }
 
 /* Content */
