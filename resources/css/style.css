@@ -92,6 +92,7 @@ header .mobile {
   header .mobile {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 6.4rem;
   }
   header .mobile .ic {
