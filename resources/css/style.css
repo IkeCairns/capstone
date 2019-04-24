@@ -157,9 +157,8 @@ header .mobile {
     display: none;
   }
   .learn .mobile {
-    max-width: 100%;
+    width: 100%;
     background-color: lightgrey;
-    display: flex;
   }
   .learn .mobile .img {
     max-width: 100%;
