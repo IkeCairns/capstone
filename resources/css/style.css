@@ -117,35 +117,39 @@ header .mobile {
 }
 
 /* Learn */
-.learn {
+.learn .desktop {
   background-color: lightgrey;
   display: flex;
 }
 
-.learn .left img {
+.learn .desktop .left img {
   max-width: 100%;
 }
 
-.learn .right {
+.learn .desktop .right {
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.learn .right h4 {
+.learn .desktop .right h4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-#start-block {
+.learn .desktop #start-block {
   background-color: rgb(41, 41, 41);
   text-align: center;
   vertical-align: center;
 }
 
-#start-block h4 {
+.learn .desktop #start-block h4 {
   color: white;
+}
+
+.learn .mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 480px) {
