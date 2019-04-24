@@ -156,6 +156,13 @@ header .mobile {
   .learn .desktop {
     display: none;
   }
+  .learn .mobile {
+    background-color: lightgrey;
+    display: flex;
+  }
+  .learn .mobile .img {
+    max-width: 100%;
+  }
 }
 
 
