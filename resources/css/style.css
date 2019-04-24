@@ -162,8 +162,22 @@ header .mobile {
     display: flex;
     flex-direction: column;
   }
-  .learn .mobile .img {
+  .learn .mobile .myimg img {
     max-width: 100%;
+  }
+  .learn .mobile h1 {
+    margin: 3.2rem 1.6rem;
+  }
+  .learn .mobile h4 {
+    margin: 0 1.6rem 2.4rem 1.6rem;
+  }
+  .learn .mobile #start-block {
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    vertical-align: center;
+  }
+  .learn .mobile #start-block h4 {
+    color: white;
   }
 }
 
