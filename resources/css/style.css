@@ -159,6 +159,8 @@ header .mobile {
   .learn .mobile {
     width: 100%;
     background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
   }
   .learn .mobile .img {
     max-width: 100%;
