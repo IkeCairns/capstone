@@ -157,7 +157,7 @@ header .mobile {
     display: none;
   }
   .learn .mobile {
-    width: auto;
+    max-width: 100%;
     background-color: lightgrey;
     display: flex;
   }
