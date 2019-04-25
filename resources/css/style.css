@@ -4,54 +4,75 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
 }
-
 h1 {
   font-size: 3rem;
   font-weight: 720;
   color:rgb(41, 41, 41);
 }
-
 h2 {
   margin-bottom: 2.4rem;
   font-size: 2.5rem;
   font-weight: 720;
   color:rgb(41, 41, 41);
 }
-
 h3 {
   font-size: 2rem;
   color: rgb(41, 41, 41)
 }
-
 h4 {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 2rem;
   color: rgb(41, 41, 41);
 }
-
 p {
   color: rgb(41, 41, 41);
   line-height: 1.5rem;
 }
-
 .grey {
   color: grey;
 }
-
 .light-grey {
   color: lightgrey;
 }
-
 .blue {
   color: blue;
   font-weight: bold;
 }
-
 .mybold {
   font-weight: 720;
   margin-top: 2.4rem;
   margin-bottom: 3.2rem;
+}
+.left {
+  margin: 0 2.4rem;
+  width: 60%;
+  margin-right: 1.2rem;
+}
+.right {
+  width: 40%;
+  margin-left: 1.2rem;
+}
+.desktop .in-right-child {
+  width: 100%;
+  display: flex;
+}
+.desktop .right-child {
+  padding-right: 1.6rem;
+}
+.desktop .in-left {
+  margin: 1.6rem;
+  width: 35%;
+}
+.desktop .in-left img {
+  max-width: 100%;
+  height: auto;
+}
+.desktop .in-right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Header */
@@ -61,17 +82,14 @@ header .desktop{
   align-items: center;
   padding: 1.6rem 2.4rem;
 }
-
 header .desktop .ic-logo {
   width: 3.2rem;
   height: 3.2rem;
 }
-
 header .desktop h3 {
   flex-grow: 1;
   font-weight: bold;
 }
-
 header .desktop ul{
   display: flex;
 }
@@ -101,53 +119,32 @@ header .mobile {
   }
 }
 
-/* Content */
-.content {
-  padding: 3.2rem 2.4rem;
-}
-
-.left {
-  width: 60%;
-  margin-right: 1.2rem;
-}
-
-.right {
-  width: 40%;
-  margin-left: 1.2rem;
-}
-
 /* Learn */
 .learn .desktop {
+  padding: 3.2rem 2.4rem;
   background-color: lightgrey;
   display: flex;
 }
-
 .learn .desktop .left img {
   max-width: 100%;
 }
-
 .learn .desktop .right {
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .learn .desktop .right h4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
-
 .learn .desktop #start-block {
   background-color: rgb(41, 41, 41);
   text-align: center;
   vertical-align: center;
 }
-
 .learn .desktop #start-block h4 {
   color: white;
 }
-
 .learn .mobile {
   display: none;
 }
@@ -165,151 +162,178 @@ header .mobile {
   .learn .mobile .myimg img {
     max-width: 100%;
   }
-  .learn .mobile h1 {
-    margin: 3.2rem 1.6rem;
+  .learn .mobile .mytext {
+    padding: 3.2rem 1.6rem;
   }
-  .learn .mobile h4 {
-    margin: 0 1.6rem 2.4rem 1.6rem;
+  .learn .mobile .mytext h4 {
+    margin-top: 3.2rem;
   }
   .learn .mobile #start-block {
     background-color: rgb(41, 41, 41);
-    text-align: center;
-    vertical-align: center;
+    margin: 0 1.6rem 3.2rem 1.6rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
   }
   .learn .mobile #start-block h4 {
     color: white;
   }
 }
 
-
 /* Practicing */
-.practicing {
+.practicing .desktop {
+  margin: 3.2rem 2.4rem;
   width: auto;
   display: flex;
 }
-
-.practicing .left {
+.practicing .desktop .left {
   display: flex;
   flex-direction: column;
 }
-
-.practicing .left img {
+.practicing .desktop .left img {
   max-width: 100%;
 }
-
-.practicing .left h2 {
+.practicing .desktop h2 {
   margin-top: 3.2rem;
 }
-
-.right-child {
-  padding: 1.6rem 1.6rem;
-}
-
-.in-right-child {
-  width: 100%;
-  display: flex;
-}
-
-.in-left {
-  width: 35%;
-}
-
-.in-left img {
-  max-width: 100%;
-  height: auto;
-}
-
-.in-right {
-  padding-left:1.2rem;
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#ourguest {
+.practicing .desktop #ourguest {
   background-color: lightgrey;
+}
+.practicing .mobile {
+  display:none;
+}
+@media only screen and (max-width: 480px) {
+  .practicing .desktop {
+    display: none;
+  }
+  .practicing .mobile {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .practicing .mobile .mobile-child {
+    margin: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .practicing .mobile .myimg img {
+    max-width: 100%;
+  }
+  .practicing .mobile .mytext {
+    padding: 1.6rem;
+  }
 }
 
 /* Start */
 .start {
+  padding: 3.2rem 0 1.6rem 0;
   background-color: lightgrey;
 }
-
 .start h2 {
   text-align: center;
 }
-
-#six-pictures {
+.start #six-pictures {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   width: auto;
   display: flex;
 }
-
-.start-child {
+.start .start-child {
   margin-left: 1.6rem;
   margin-right: 1.6rem;
   display: flex;
   flex-direction: column;
 }
-
-.start-grandchild {
+.start .start-grandchild {
   margin-bottom: 2rem;
   background-color: white;
   display: flex;
   flex-direction: column;
 }
-
-.start-grandchild img {
+.start .start-grandchild img {
   max-width: 100%;
   height: auto;
 }
-
-.text {
+.start .text {
   height: 15rem;
   margin-left: 1.6rem;
 }
-
-.start-grandchild h4 {
+.start .start-grandchild h4 {
   margin-top: 1.6rem;
   margin-bottom: 0.8rem;
 }
-
-.start-grandchild p {
+.start .start-grandchild p {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
-
-/* Thesis */
-.thesis h2 {
-  text-align: center;
+.start .mobile {
+  display: none;
 }
 
+@media only screen and (max-width: 480px) {
+  .start #six-pictures {
+    display: none;
+  }
+  .start .mobile {
+    margin: 0 1.6rem 3.2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .start .mobile .mytext {
+    margin: 0.4rem 0;
+    padding: 1.6rem;
+    background-color: white;
+  }
+}
+
+/* Thesis */
+.thesis .desktop {
+  padding: 3.2rem 2.4rem;
+}
+.thesis .desktop h2 {
+  text-align: center;
+}
 .thesis-3media {
   width: auto;
   display: flex;
 }
-
-.thesis .left {
+.thesis .desktop .left {
   display: flex;
   flex-direction: column;
 }
-
-.thesis .left video {
+.thesis .desktop .left video {
   max-width: 100%;
 }
-
-.thesis .left h4 {
+.thesis .desktop .left h4 {
   margin: 2.4rem 0 0.4rem 0;
 }
-
-.thesis .left p {
-  margin-top: 0.4rem 0 0.4rem 0;
+.thesis .desktop .left p {
+  margin-top: 0.4rem 0;
 }
-
 .fisma {
   background-color: lightgrey;
+}
+.thesis .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis .desktop {
+    display: none;
+  }
+  .thesis .mobile {
+    padding-bottom: 2.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .thesis .mobile h2 {
+    margin: 3.2rem auto 1.6rem auto;
+  }
+  .thesis .mobile .myvideo video{
+    max-width: 100%;
+  }
 }
 
 /* Footer */
